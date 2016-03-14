@@ -45,3 +45,5 @@ group :development do
   gem 'spring'
 end
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
+
