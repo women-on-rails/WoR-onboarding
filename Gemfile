@@ -35,6 +35,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'binding_of_caller'
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :development do
@@ -47,3 +52,17 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 
+
+gem 'puma'
+gem 'pg'
+gem 'figaro'
+gem 'redis'
+
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
+gem 'autoprefixer-rails'
+
+group :production do
+  gem 'rails_12factor'
+end
