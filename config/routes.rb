@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # root to: 'pages#home'
   get "/" => 'home#index'
   get "/worriers" => 'worriers#worriers'
   # The priority is based upon order of creation: first created -> highest priority.
