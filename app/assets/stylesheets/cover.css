@@ -6,19 +6,26 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #333;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #222;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #f2f2f2;
+  border: 1px solid #c6c6c6;
 }
 
+.btn-default:hover {
+  opacity: 1;
+}
 
 /*
  * Base structure
@@ -27,12 +34,13 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: white;
+  /*font-family: freight-sans-pro,sans-serif;*/
 }
 body {
-  color: #fff;
+  color: #333;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -47,6 +55,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  height: 1200px;
 }
 .cover-container {
   margin-right: auto;
@@ -77,9 +86,9 @@ body {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  /*font-weight: bold;*/
+  /*color: #fff;*/ /* IE8 proofing */
+  /*color: rgba(255,255,255,.75);*/
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -114,7 +123,7 @@ body {
 }
 .cover .btn-lg {
   padding: 10px 20px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 
