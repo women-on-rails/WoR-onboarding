@@ -166,6 +166,7 @@ h3 {
   .masthead {
     position: fixed;
     top: 0;
+    background: white;
   }
   .mastfoot {
     position: fixed;
