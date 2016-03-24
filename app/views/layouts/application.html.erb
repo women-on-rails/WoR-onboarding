@@ -34,7 +34,35 @@
   </head>
 
   <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"><a href="#">Women On Rails</a></h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <!-- <li class="active"><a href="#"></a></li> -->
+                  <li><a href="#">Manifest</a></li>
+                  <li><a href="mailto:hello@womenonrails.com">Contact</a></li>
+                  <li><a href="https://twitter.com/railsgirlsparis" target="_blank" class="fa fa-twitter"></a></li>
+                  <li><a href="http://www.meetup.com/Women-On-Rails"><%= image_tag("meetuplogo.svg") %> J'y participe</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
     <%= yield %>
+
+          </div>
+
+      </div>
+
+    </div>
+
     <%= javascript_include_tag 'application' %>
 
     <!-- Bootstrap core JavaScript
@@ -54,9 +82,6 @@
   <!-- Footer -->
     <footer>
       <div>
-        <ul>
-          <a href="https://twitter.com/railsgirlsparis" target="_blank" class="fa fa-twitter"></a>
-        </ul>
         <ul class="copyright">
           <p>&copy; Women On Rails 2016 - handcrafted in the <a href="https://goo.gl/maps/GgbHQVfFcW72">city of love</a>, using <a href="http://getbootstrap.com">Bootstrap</a></p>
         </ul>

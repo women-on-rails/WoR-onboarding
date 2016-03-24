@@ -13,6 +13,10 @@ a:hover {
   font-weight: bold;
 }
 
+p {
+
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -39,7 +43,8 @@ body {
 }
 body {
   color: #333;
-  text-align: center;
+  text-align: left;
+  line-height: 1.5;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
@@ -54,8 +59,8 @@ body {
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
-  height: 1200px;
+  vertical-align: middle;
+  /*height: 1200px;*/
 }
 .cover-container {
   margin-right: auto;
@@ -113,6 +118,19 @@ body {
   }
 }
 
+.lead {
+  text-align: center;
+}
+
+.cover-heading {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 
 /*
  * Cover
@@ -120,6 +138,8 @@ body {
 
 .cover {
   padding: 0 20px;
+  padding-top: 250px;
+  padding-bottom: 100px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -170,3 +190,8 @@ body {
     width: 700px;
   }
 }
+
+footer {
+  text-align: center;
+}
+
