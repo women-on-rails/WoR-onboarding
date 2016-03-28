@@ -1,10 +1,9 @@
 
-$source 'https://rubygems.org'
-ruby '2.2.4'
+source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '4.2.5'
-gem 'puma'
-gem 'pg'
+gem 'sqlite3'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
@@ -28,4 +27,5 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
