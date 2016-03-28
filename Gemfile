@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
-ruby '2.2.2'
+
+$source 'https://rubygems.org'
+ruby '2.2.4'
 
 gem 'rails', '4.2.5'
 gem 'puma'
@@ -23,12 +24,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-
-
 end
 
 group :production do
   gem 'rails_12factor'
 end
-
-gem 'rubygems-update', '~> 2.2.2', '>= 2.2.4'
