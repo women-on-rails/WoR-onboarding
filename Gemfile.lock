@@ -177,7 +177,7 @@ DEPENDENCIES
   rails (= 4.2.5)
   rails_12factor
   redis
-  rubygems-update (~> 2.2, >= 2.2.4)
+  rubygems-update (~> 2.2.2, >= 2.2.4)
   sass-rails
   simple_form
   spring
