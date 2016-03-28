@@ -30,3 +30,5 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'rubygems-update', '~> 2.2', '>= 2.2.4'
