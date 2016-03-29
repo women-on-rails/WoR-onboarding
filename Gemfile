@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.1.5'
 
 gem 'rails', '4.2.5'
-gem 'puma'
+#gem 'puma'
 gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
@@ -23,6 +23,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
+  gem 'tzinfo-data', platform: [:mingw, :mswin]
 
 
 end
