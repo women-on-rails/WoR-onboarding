@@ -2,7 +2,7 @@
 #
 # Install the pg driver:
 #   gem install pg
-# On OS X wièà(-th Homebrew:
+# On OS X with Homebrew:
 #   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
 # On OS X with MacPorts:
 #   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -24,8 +24,7 @@ default: &default
 development:
   <<: *default
   database: TEST_development
-  username: postgres
-  password: 7056
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -81,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: TEST_production
   username: TEST
   password: <%= ENV['TEST_DATABASE_PASSWORD'] %>
