@@ -1,4 +1,3 @@
-
 source 'https://rubygems.org'
 ruby '2.0.0'
 
@@ -23,6 +22,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
+  gem 'tzinfo-data', platform: [:mingw, :mswin]
 end
 
 group :production do
